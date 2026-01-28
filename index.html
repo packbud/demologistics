@@ -197,8 +197,17 @@
                   <div class="titlepage">
                      <h2>Få pris direkt</h2>
                      <br/>
-                     <iframe style="border:0" width="1300" height="800" src="https://packbud-market-staging.azurewebsites.net/iframe/store/2"></iframe>
+                     <iframe id="pb-store-frame" src="https://packbud-market-staging.azurewebsites.net/iframe/store/2?hideContent=true" frameborder="0" allowtransparency="true" scrolling="no"
+                        role="presentation" width="1300" height="1000" style="border:0;width:100%"></iframe>
+                     <script>
+                        const storeFrame = document.getElementById("pb-store-frame");
+                        window.addEventListener("message", msg => {
+                           if (msg.source !== storeFrame.contentWindow)
+                              return;
 
+                           storeFrame.style.height = msg.data.scrollHeight + 'px';
+                        });
+                     </script>
                   </div>
                </div>
             </div>
