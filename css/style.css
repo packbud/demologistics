@@ -1062,6 +1062,23 @@ ul.location_icon li a:hover {
      color: #000;
 }
 
+.versions {
+     padding-top: 5em;
+     background-color: #0f98f8;
+     display: flex;
+     justify-content: center;
+}
+
+.versions ol {
+     width: max-content;
+     text-align: start;
+     list-style: unset;
+}
+.versions ol li {
+     list-style: unset;
+     font-size: 1.2em;
+}
+
 
 /** end footer **/
 
