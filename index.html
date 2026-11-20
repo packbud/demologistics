@@ -160,17 +160,12 @@
                   <div class="titlepage">
                      <h2>Få pris direkt</h2>
                      <br/>
-                     <iframe id="pb-store-frame" src="https://packbud-market-staging.azurewebsites.net/iframe/store/DemoTransport AB?hideContent=true" frameborder="0" allowtransparency="true" scrolling="no"
-                        role="presentation" width="1300" height="1000" style="border:0;width:100%"></iframe>
-                     <script>
-                        const storeFrame = document.getElementById("pb-store-frame");
-                        window.addEventListener("message", msg => {
-                           if (msg.source !== storeFrame.contentWindow)
-                              return;
-
-                           storeFrame.style.height = msg.data.scrollHeight + 'px';
-                        });
-                     </script>
+                     <script 
+                        src="https://packbud-market-staging.azurewebsites.net/widget/v1/widget.js"
+                        data-client-id="DemoTransport AB"
+                        data-hide-content="true"
+                        data-open-results-in-parent="true"
+                        data-css-variables='{"--color-primary":"#0f98f8","--color-primary-hover":"#0a6aad","--color-background":"#f7f7f9","--color-background-secondary":"#e5f4ff","--color-border":"#cccccc","--color-border-input":"#cccccc"}'></script>
                   </div>
                </div>
             </div>
